@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number 3</title>
+</head>
+<body>
+    <h2>Find the Maximum of Three Numbers</h2>
+
+    <!-- Input fields for numbers -->
+    <label for="num1">Enter first number:</label><br>
+    <input type="text" id="num1"><br>
+    
+
+    <label for="num2">Enter second number:</label><br>
+    <input type="text" id="num2"><br>
+
+
+    <label for="num3">Enter third number:</label><br>
+    <input type="text" id="num3"><br>
+
+    <!-- Button to calculate the maximum -->
+    <button onclick="findMax()">Find Maximum number</button>
+
+    <h3 id="result"></h3>
+
+    <script>
+        function findMax() {
+            // Get the values from the inputs
+            let num1 = document.getElementById('num1').value;
+            let num2 = document.getElementById('num2').value;
+            let num3 = document.getElementById('num3').value;
+
+            // Convert the inputs to numbers
+            num1 = Number(num1);
+            num2 = Number(num2);
+            num3 = Number(num3);
+
+            // // Check if the inputs are valid numbers
+            // if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+            //     document.getElementById('result').textContent = "Please enter valid numbers.";
+            // } else {
+                // Use Math.max to get the maximum value
+                let max = Math.max(num1, num2, num3);
+
+                // Display the result
+                document.getElementById('result').textContent = `The maximum number is: ${max}`;
+            }
+        
+    </script>
+    4. Write a JavaScript function that takes a time input in 12-hour format (e.g., "02:30 PM") and converts it to 24-hour format (e.g., "14:30"). The function should take user input from an HTML form and display the result.
+    5. Write a JavaScript function that takes a sentence from the user and counts the number of words in it. Display the result in an HTML paragraph.
+    
+</body>
+</html>
